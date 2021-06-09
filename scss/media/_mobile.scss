@@ -1,0 +1,28 @@
+@import "../variables/variables";
+
+@media (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        font-size: $f-size - 6px;
+    }
+
+    .sectionLogo {
+        block-size: $block-size-mob;
+    }
+    
+    .logo {
+        height: 25%;
+        width: 30%;
+        margin-left: ($f-size - 6px)/2;
+    }
+
+    .box-size {
+        block-size: $block-size-mob;
+    }
+
+}
