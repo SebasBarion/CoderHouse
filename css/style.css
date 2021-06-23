@@ -236,7 +236,7 @@ input[type=text], input[type=number], textarea {
   background-color: #ebe8e5;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding: 0 1rem;
 }
 .footer p {
@@ -247,34 +247,69 @@ input[type=text], input[type=number], textarea {
   padding-top: 1.2rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 767px) {
   * {
     margin: 0;
     padding: 0;
   }
 
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .sectionLogo {
-    block-size: 28rem;
+    block-size: 16rem;
+  }
+  .sectionLogo .logo {
+    height: 25%;
+    width: 40%;
+    margin: -8.5rem 0 0 -4.5rem;
+  }
+  .sectionLogo .p-welcome {
+    color: white;
+    padding-top: 9.5rem;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sectionCarrousel .p-products {
+    font-size: 2.1rem;
+  }
+
+  .box-size {
+    block-size: 16rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .sectionLogo {
+    block-size: 32rem;
+  }
+  .sectionLogo .p-welcome {
+    color: white;
+    padding-top: 22rem;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .logo {
     height: 25%;
-    width: 30%;
-    margin-left: 5px;
-  }
-
-  .box-size {
-    block-size: 28rem;
-  }
-}
-@media (min-width: 850) and (max-width: 1200px) {
-  .logo {
-    height: 45%;
     width: 35%;
+    padding-top: 4rem;
   }
 }
 .header404 {
