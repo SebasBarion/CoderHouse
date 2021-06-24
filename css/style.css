@@ -38,6 +38,10 @@ html {
 
 .img-social {
   width: 3rem;
+  filter: grayscale(1);
+}
+.img-social:hover {
+  filter: none;
 }
 
 .ulBarra {
@@ -247,6 +251,26 @@ input[type=text], input[type=number], textarea {
   padding-top: 1.2rem;
 }
 
+.header404 {
+  font-size: 1.2rem;
+  background-color: #ebe8e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 650;
+}
+.header404 p {
+  display: flex;
+  padding-left: 0.1rem;
+}
+.header404 a {
+  display: flex;
+  padding-left: 0.1rem;
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width: 767px) {
   * {
     margin: 0;
@@ -273,6 +297,15 @@ input[type=text], input[type=number], textarea {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .background2 {
+    background-attachment: fixed;
+    background-position: 74% 20%;
+  }
+
+  .img-social {
+    filter: none;
   }
 
   .sectionCarrousel .p-products {
@@ -306,30 +339,15 @@ input[type=text], input[type=number], textarea {
     justify-content: space-between;
   }
 
+  .img-social {
+    filter: none;
+  }
+
   .logo {
     height: 25%;
     width: 35%;
     padding-top: 4rem;
   }
-}
-.header404 {
-  font-size: 1.2rem;
-  background-color: #ebe8e5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  font-weight: 650;
-}
-.header404 p {
-  display: flex;
-  padding-left: 0.1rem;
-}
-.header404 a {
-  display: flex;
-  padding-left: 0.1rem;
-  text-decoration: none;
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
