@@ -2,11 +2,11 @@
 .sectionLogo {
     background-image: url("../images/espejo.jpg");
     @include backgroung-img(85%,fixed,0,0);
-    block-size: 50rem;
+    block-size: 58rem;
 
     .p-welcome {
         color: white;
-        padding-top: 20rem;
+        padding-top: 30rem;
         font-size: 8rem;
         display: flex;
         flex-direction: column;
@@ -14,12 +14,14 @@
         justify-content: space-between;
     }
 
+  
 }
 
 .logo {
     opacity: 0.5;
+    display: flex;
     position: absolute;
-    padding-left: 8rem;
+    padding-left: 15rem;
     padding-top: 10rem;
     transition: all 2s;
 

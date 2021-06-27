@@ -7,4 +7,6 @@
 
 .h2Cont {
     @include h2Conf(1rem,white,block,1.5rem);
+    display: flex;
+    justify-content: space-around;
 }
