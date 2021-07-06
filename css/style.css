@@ -194,10 +194,8 @@ html {
   font-size: 2rem;
 }
 .sectionCarrousel .sectionText2 {
-  border: black;
-  border-width: 2px;
   font-size: 2rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-left: 6rem;
   text-decoration-style: none;
   list-style-type: none;
@@ -208,27 +206,32 @@ html {
   color: black;
   opacity: 0.2;
   padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 10px;
   background: none;
-  /* Old browsers */
-  background: linear-gradient(to right, white 50%, blue 50%);
+  background: linear-gradient(to right, #b6b1b1 50%, #414155 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
 }
 .sectionCarrousel .sectionText2 li:hover {
   opacity: 1;
   background-position: left bottom;
 }
-.sectionCarrousel .p-products {
+
+.p-product {
   font-size: 2rem;
-  font-weight: 550;
+  padding-top: 2rem;
+  justify-content: center;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 1rem;
+  justify-content: center;
+}
+.p-product a {
+  text-decoration: none;
+  padding-left: 0.5rem;
 }
 
 .background2 {
@@ -339,6 +342,113 @@ input[type=text], input[type=number], textarea {
 .header404 a {
   display: flex;
   padding-left: 0.1rem;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  padding-left: 3rem;
+  color: #7e7e7e;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.mainSection {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  font-family: "Fredericka the Great", cursive;
+  color: #0a0a0a;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.mainDiv {
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.img-flip {
+  width: 25rem;
+  height: 25rem;
+}
+
+.flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mainDiv:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.frontFlip, .backFlip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* for Safari*/
+  backface-visibility: hidden;
+}
+
+.frontFlip {
+  background-color: #bbb;
+  color: black;
+}
+
+.backFlip {
+  background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-blend-mode: normal, lighten, soft-light;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.backFlip h1 {
+  padding-top: 35%;
+  font-size: 2rem;
+}
+
+.backFlip p {
+  font-size: 2rem;
+}
+
+.backFlip a {
+  font-size: 2rem;
+  color: red;
+}
+
+.nav {
+  font-size: 2rem;
+  background-color: #ebe8e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.nav p {
+  display: flex;
+  padding-left: 0.1rem;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 1.2rem;
+}
+.nav a {
   text-decoration: none;
   color: black;
 }

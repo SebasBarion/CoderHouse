@@ -15,10 +15,8 @@ border-width: 10px;
  
 }
 .sectionText2 {
-    border: black;
-    border-width: 2px;
     font-size: 2rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-left: 6rem;
     text-decoration-style: none;
     list-style-type: none;
@@ -26,33 +24,38 @@ border-width: 10px;
     flex-direction: column;
 
     li {
-        color: black;
-        opacity: 0.2;
-        padding-bottom: 1rem;
-        border-radius: 10px;
-        background:none;
-        /* Old browsers */
-        background: linear-gradient(to right, white 50%, blue 50%);
-        background-size: 200% 100%;
-        background-position:right bottom;
-        -webkit-transition: all 0.7s ease-in-out;
-        -moz-transition: all 0.7s ease-in-out;
-        -o-transition: all 0.7s ease-in-out;
-        
-        &:hover{
-            opacity: 1;
-            background-position:left bottom;
+            color: black;
+            opacity: 0.2;
+            padding-bottom: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            background:none;
+            background: linear-gradient(to right, rgb(182, 177, 177) 50%, rgb(65, 65, 85) 50%);
+            background-size: 200% 100%;
+            background-position:right bottom;
+            -webkit-transition: all 0.8s ease-in-out;
+            -moz-transition: all 0.8s ease-in-out;
+            -o-transition: all 0.8s ease-in-out;
+            
+            &:hover{
+                opacity: 1;
+                background-position:left bottom;
 
+            }
         }
     }
-}
 
-.p-products{
-    font-size:2rem ;
-    font-weight: 550;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 1rem;
 }
+.p-product {
+    font-size: 2rem;
+    padding-top: 2rem;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        padding-left: 0.5rem;
+    }
 }

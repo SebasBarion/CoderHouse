@@ -5,7 +5,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    
     font-weight: 650;
 
     p {
@@ -18,4 +17,21 @@
         text-decoration: none;
         color: black;
     }
+}
+
+h1 {
+    font-size: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+   padding-left: 3rem;
+   color: grayscale($color: #807b7b);
+}
+a {
+    text-decoration: none;
+    color: grayscale($color: #1a1919);
+
 }
