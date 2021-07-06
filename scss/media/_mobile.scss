@@ -1,0 +1,53 @@
+@import "../variables/variables";
+
+@media (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        font-size: 8px;
+    }
+
+    .sectionLogo {
+        block-size: $block-size-mob;
+
+        .logo {
+            height: 25%;
+            width: 40%;
+            margin: -8.5rem 0 0 -4.5rem;
+        }
+
+        .p-welcome {
+            color: white;
+            padding-top: 9.5rem;
+            font-size: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .background2 {
+        background-attachment: fixed;
+        background-position: 74% 20%;
+      }
+
+      .img-social {
+          filter: none;
+      }
+
+    .sectionCarrousel {
+        .p-products {
+            font-size: 2.1rem;
+        }
+    }
+    
+
+    .box-size {
+        block-size: $block-size-mob;
+    }
+}

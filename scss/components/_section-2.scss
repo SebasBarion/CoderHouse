@@ -1,0 +1,25 @@
+.background {
+    background-image:$bg-section2;
+    display: flex;
+    padding: 5rem  5rem;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.letras {
+    color: rgb(8, 7, 8);
+    font-weight: 580;
+    font-size: 1.2rem;
+    text-indent: 4%;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.video {
+    opacity:0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}

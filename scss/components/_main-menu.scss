@@ -1,0 +1,54 @@
+@import "../variables/variables";
+
+.headerPpal {
+    position:relative;
+    display: flex;
+    width: 100%;
+}
+
+.navClass {
+    background-image: $bg-nav;
+    border: solid; 
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border-width:0.3rem;
+    border-color:black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    color: rgb(8, 7, 8);
+}
+
+.ulPpal {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    list-style-type: none;
+    display: flex;
+    margin: 0.2rem 0.2rem;
+    align-items: center;
+
+    li {
+        position: relative;
+        padding:0 0.7rem 0 0;
+
+        a {
+            color: rgb(8, 7, 8);
+            text-decoration: none;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 0;
+        }
+
+        &:hover {
+            animation: jumpE 0.9s infinite;
+        }
+    }
+}
+
+@keyframes jumpE {
+    0% { transform: translateY(-10%) }
+    50% { transform: translateY(-50%) }
+    100% { transform: translateY(-10%) }
+}

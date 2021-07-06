@@ -1,0 +1,535 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredericka the Great", cursive;
+}
+
+html {
+  font-size: 16px;
+}
+
+.h2Prod {
+  padding-left: 1rem;
+  color: black;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.h1LastSect1 {
+  font-size: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.h1LastSect2 {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.h2Cont {
+  padding-left: 1rem;
+  color: white;
+  display: block;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.barraIcono {
+  padding: 0 0.3rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.img-social {
+  width: 3rem;
+  filter: grayscale(1);
+}
+.img-social:hover {
+  filter: none;
+}
+
+.ulBarra {
+  display: block;
+  list-style-type: none;
+  flex-direction: row;
+  transition: all 1s ease-in;
+}
+.ulBarra li:hover {
+  transform: translateX(-3.5px);
+}
+
+.headerPpal {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.navClass {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  border: solid;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border-width: 0.3rem;
+  border-color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  color: #080708;
+}
+
+.ulPpal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  list-style-type: none;
+  display: flex;
+  margin: 0.2rem 0.2rem;
+  align-items: center;
+}
+.ulPpal li {
+  position: relative;
+  padding: 0 0.7rem 0 0;
+}
+.ulPpal li a {
+  color: #080708;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+}
+.ulPpal li:hover {
+  animation: jumpE 0.9s infinite;
+}
+
+@keyframes jumpE {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+.sectionLogo {
+  background-image: url("../images/espejo.jpg");
+  background-size: 85%;
+  background-attachment: fixed;
+  block-size: 58rem;
+}
+.sectionLogo .p-welcome {
+  color: white;
+  padding-top: 32rem;
+  font-size: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  opacity: 0.5;
+  display: flex;
+  position: absolute;
+  padding-left: 15rem;
+  padding-top: 10rem;
+  transition: all 2s;
+}
+.logo:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.background {
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  display: flex;
+  padding: 5rem 5rem;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.letras {
+  color: #080708;
+  font-weight: 580;
+  font-size: 1.2rem;
+  text-indent: 4%;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.video {
+  opacity: 0.7;
+}
+.video:hover {
+  opacity: 1;
+}
+
+.sectionCarrousel {
+  background-color: #DCD9D4;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 50%);
+  background-blend-mode: soft-light, screen;
+}
+.sectionCarrousel .section1 {
+  border: black;
+  border-width: 10px;
+}
+.sectionCarrousel .sectionText1 {
+  border-width: 2px;
+  font-size: 2rem;
+}
+.sectionCarrousel .sectionText2 {
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-left: 6rem;
+  text-decoration-style: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.sectionCarrousel .sectionText2 li {
+  color: black;
+  opacity: 0.2;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: none;
+  background: linear-gradient(to right, #b6b1b1 50%, #414155 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.sectionCarrousel .sectionText2 li:hover {
+  opacity: 1;
+  background-position: left bottom;
+}
+
+.p-product {
+  font-size: 2rem;
+  padding-top: 2rem;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.p-product a {
+  text-decoration: none;
+  padding-left: 0.5rem;
+}
+
+.background2 {
+  background-image: url("../images/colgante.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 30%;
+  padding: 5rem 5rem 4rem 4rem;
+  block-size: 50rem;
+}
+.background2 .ul, .background2 li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer {
+  font-size: 0.8rem;
+  background-color: #ebe8e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.footer p {
+  display: flex;
+  padding-left: 0.1rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-top: 1.2rem;
+}
+
+.background3 {
+  background-image: url("../images/colgante.jpg");
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 40%;
+  padding: 5rem 5rem 30rem 4rem;
+}
+
+.form {
+  padding-top: 0.8rem;
+  padding-left: 2.2rem;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 550;
+  color: #e28ade;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+input[type=text], input[type=number], textarea {
+  width: 24rem;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/*Flex par evitar que al incrementar el área de texto, no se desplace el boton de enviar*/
+.textA {
+  height: 8rem;
+  border-radius: 0.5rem;
+  resize: both;
+  display: flex;
+}
+
+.inputS {
+  font-family: "Fredericka the Great", cursive;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px #999;
+  color: black;
+  font-weight: 600;
+  border: none;
+  margin: 0 0rem 0 5rem;
+  background-color: #fdc8ed;
+}
+.inputS:hover {
+  background-color: white;
+}
+.inputS:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.header404 {
+  font-size: 1.2rem;
+  background-color: #ebe8e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 650;
+}
+.header404 p {
+  display: flex;
+  padding-left: 0.1rem;
+}
+.header404 a {
+  display: flex;
+  padding-left: 0.1rem;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  padding-left: 3rem;
+  color: #7e7e7e;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.mainSection {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  font-family: "Fredericka the Great", cursive;
+  color: #0a0a0a;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.mainDiv {
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.img-flip {
+  width: 25rem;
+  height: 25rem;
+}
+
+.flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mainDiv:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.frontFlip, .backFlip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* for Safari*/
+  backface-visibility: hidden;
+}
+
+.frontFlip {
+  background-color: #bbb;
+  color: black;
+}
+
+.backFlip {
+  background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-blend-mode: normal, lighten, soft-light;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.backFlip h1 {
+  padding-top: 35%;
+  font-size: 2rem;
+}
+
+.backFlip p {
+  font-size: 2rem;
+}
+
+.backFlip a {
+  font-size: 2rem;
+  color: red;
+}
+
+.nav {
+  font-size: 2rem;
+  background-color: #ebe8e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.nav p {
+  display: flex;
+  padding-left: 0.1rem;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 1.2rem;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 8px;
+  }
+
+  .sectionLogo {
+    block-size: 16rem;
+  }
+  .sectionLogo .logo {
+    height: 25%;
+    width: 40%;
+    margin: -8.5rem 0 0 -4.5rem;
+  }
+  .sectionLogo .p-welcome {
+    color: white;
+    padding-top: 9.5rem;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .background2 {
+    background-attachment: fixed;
+    background-position: 74% 20%;
+  }
+
+  .img-social {
+    filter: none;
+  }
+
+  .sectionCarrousel .p-products {
+    font-size: 2.1rem;
+  }
+
+  .box-size {
+    block-size: 16rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .sectionLogo {
+    block-size: 32rem;
+  }
+  .sectionLogo .p-welcome {
+    color: white;
+    padding-top: 22rem;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img-social {
+    filter: none;
+  }
+
+  .logo {
+    height: 25%;
+    width: 35%;
+    padding-top: 4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

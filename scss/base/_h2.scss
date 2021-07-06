@@ -1,0 +1,28 @@
+@import "../mixins/mixins";
+
+.h2Prod {
+
+    @include h2Conf(1rem,black,block,2rem);
+}
+
+.h1LastSect1 {
+    font-size: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.h1LastSect2 {
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h2Cont {
+    @include h2Conf(1rem,white,block,1.5rem);
+    font-size: 2rem;
+}
